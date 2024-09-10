@@ -1,0 +1,34 @@
+.circle {
+    
+    position: relative;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    border: solid #000;
+    margin: 20px;
+}
+
+#cir1 {
+    width: 6rem;
+    height: 6rem;
+    z-index: 5;
+}
+#cir2 {
+    width: 8rem;
+    height: 8rem;
+    z-index: 4;
+}
+#cir3 {
+    width: 10rem;
+    height: 10rem;
+    z-index: 3;
+}
+#cir4 {
+    width: 12rem;
+    height: 12rem;
+    z-index: 2;
+}
+#cir5 {
+    width: 14rem;
+    height: 14rem;
+    z-index: 1;
+}
