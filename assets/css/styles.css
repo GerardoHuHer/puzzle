@@ -1,34 +1,45 @@
 .circle {
-    
-    position: relative;
     border-radius: 50%;
     background-color: cornflowerblue;
     border: solid #000;
     margin: 20px;
 }
 
+.circle-container {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #cir1 {
-    width: 6rem;
-    height: 6rem;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    align-content: center;
     z-index: 5;
 }
 #cir2 {
-    width: 8rem;
-    height: 8rem;
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
     z-index: 4;
 }
 #cir3 {
-    width: 10rem;
-    height: 10rem;
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
     z-index: 3;
 }
 #cir4 {
-    width: 12rem;
-    height: 12rem;
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
     z-index: 2;
 }
 #cir5 {
-    width: 14rem;
-    height: 14rem;
+    position: relative;
+    width: 50rem;
+    height: 50rem;
     z-index: 1;
 }
