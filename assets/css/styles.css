@@ -1,15 +1,44 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+/* -------------- BOTONES ---------------- */
+.button-container {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30rem 20rem;
+    position: absolute;
+}
+
+td {
+    margin: 10px;
+}
+
+/* -------------- CIRCULOS ---------------- */
 .circle {
     border-radius: 50%;
     background-color: cornflowerblue;
     border: solid #000;
     margin: 20px;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
 }
 
 .circle-container {
+    width: 50rem;
     position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+p {
+    z-index: 5;
+    margin: 0;
 }
 
 #cir1 {
@@ -18,6 +47,8 @@
     height: 10rem;
     align-content: center;
     z-index: 5;
+
+    transform: rotate(45deg);
 }
 #cir2 {
     position: absolute;
