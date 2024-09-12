@@ -4,6 +4,11 @@ var c2 = [1, 2, 3, 4, 5, 6, 7, 8];
 var c3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var c4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 var c5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+var rotationAngle1 = 0;
+var rotationAngle2 = 0;
+var rotationAngle3 = 0;
+var rotationAngle4 = 0;
+var rotationAngle5 = 0;
 
 function shuffleArray(array) {
   let shuffledArray = array.slice();
@@ -40,22 +45,46 @@ function distributeItemsInCircle(items, id) {
   });
 }
 
-function rotateCircle(circleId, rotationSpeed) {
-  const circle = document.getElementById(circleId);
-  let rotationAngle = 0;
+// Nos basamos para hacer nuestra función
+// function rotateCircle(circleId, rotationSpeed) {
+//   const circle = document.getElementById(circleId);
+//   let rotationAngle = 0;
+//
+//   setInterval(() => {
+//     rotationAngle += rotationSpeed; // Incrementa el ángulo de rotación
+//     circle.style.transform = `rotate(${rotationAngle}deg)`; // Aplica la rotación
+//   }, 100); // Actualiza cada 100ms
+// }
 
-  setInterval(() => {
-    rotationAngle += rotationSpeed; // Incrementa el ángulo de rotación
-    circle.style.transform = `rotate(${rotationAngle}deg)`; // Aplica la rotación
-  }, 100); // Actualiza cada 100ms
-}
+function rotateCircleButton(id, dir) {
+  // id_aux = shalala();
+  const circle = document.getElementById(id);
+  console.log(id);
+  switch (id) {
+    case "cir1":
+      rotationAngle1 += (20 * dir);
+      circle.style.transform = `rotate(${rotationAngle1}deg)`;
+      break;
 
-function rotateCircleButton(id) {
-  const circle = document.getElementById(`cir${id}`);
-  console.log(`cir${id}`);
-  let rotationAngle = 0;
-  rotationAngle += 3;
-  circle.style.transform = `rotate(${rotationAngle}deg)`;
+    case "cir2":
+      rotationAngle2 += (20 * dir);
+      circle.style.transform = `rotate(${rotationAngle2}deg)`;
+      break;
+
+    case "cir3":
+      rotationAngle3 += (20 * dir);
+      circle.style.transform = `rotate(${rotationAngle3}deg)`;
+      break;
+
+    case "cir4":
+      rotationAngle4 += (20 * dir);
+      circle.style.transform = `rotate(${rotationAngle4}deg)`;
+      break;
+    case "cir5":
+      rotationAngle5 += (20 * dir);
+      circle.style.transform = `rotate(${rotationAngle5}deg)`;
+      break;
+  }
 }
 
 // rotateCircle("cir1", 3)
