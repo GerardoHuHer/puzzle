@@ -10,31 +10,35 @@
 </head>
 
 <body>
-  <!-- Flechas -->
-  <div class="d-flex button-container">
-    <div class="table">
-      <div class="tr">
-        <button class="btn-primary" type="button" onclick="rotateCircleButton(1)">▲</button>
-      </div>
-      <div class="tr">
-        <button class="btn-primary" type="button" onclick="rotateCircleButton(-1)">▼</button>
-      </div>
-    </div>
-
-
-    <!-- Círculos -->
-    <div class="d-flex m-auto circle-container">
-      <div id="cir1" class="d-flex circle click">
+  <div class="container">
+    <!-- Flechas -->
+    <div class="d-flex row ">
+      <div class="col m-auto p-5">
+        <div class="tr">
+          <button id="arriba" class="btn-primary" type="button" onclick="rotateCircleButton(1)">▲</button>
+        </div>
+        <div class="tr">
+          <button id="abajo" class="btn-primary" type="button" onclick="rotateCircleButton(-1)">▼</button>
+        </div>
       </div>
 
-      <div id="cir2" class="d-flex circle click"></div>
 
-      <div id="cir3" class="circle click"></div>
+      <!-- Círculos -->
+      <div class="d-flex m-auto circle-container col p-5">
+        <div id="cir1" class="d-flex circle click">
+        </div>
 
-      <div id="cir4" class="circle click"></div>
+        <div id="cir2" class="d-flex circle click"></div>
 
-      <div id="cir5" class="circle click">
+        <div id="cir3" class="circle click"></div>
+
+        <div id="cir4" class="circle click"></div>
+
+        <div id="cir5" class="circle click">
+        </div>
       </div>
+
+
     </div>
     <script src="assets/js/scripts.js"></script>
 </body>

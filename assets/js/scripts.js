@@ -101,7 +101,8 @@ function rotateCircleButton(dir) {
           clases = item.classList;
           for (let i = 0; i < clases.length; i++) {
             if (clases[i] === "win") {
-              item.style.backgroundColor = "green";
+              item.style.backgroundColor = "blue";
+              item.style.color = "black";
             }
           }
         })
@@ -130,7 +131,8 @@ function rotateCircleButton(dir) {
           clases = item.classList;
           for (let i = 0; i < clases.length; i++) {
             if (clases[i] === "win") {
-              item.style.backgroundColor = "green";
+              item.style.backgroundColor = "blue";
+              item.style.color = "black";
             }
           }
         })
@@ -159,7 +161,8 @@ function rotateCircleButton(dir) {
           clases = item.classList;
           for (let i = 0; i < clases.length; i++) {
             if (clases[i] === "win") {
-              item.style.backgroundColor = "green";
+              item.style.backgroundColor = "blue";
+              item.style.color = "black";
             }
           }
         })
@@ -188,7 +191,8 @@ function rotateCircleButton(dir) {
           clases = item.classList;
           for (let i = 0; i < clases.length; i++) {
             if (clases[i] === "win") {
-              item.style.backgroundColor = "green";
+              item.style.backgroundColor = "blue";
+              item.style.color = "black";
             }
           }
         })
@@ -216,7 +220,8 @@ function rotateCircleButton(dir) {
           clases = item.classList;
           for (let i = 0; i < clases.length; i++) {
             if (clases[i] === "win") {
-              item.style.backgroundColor = "green";
+              item.style.backgroundColor = "blue";
+              item.style.color = "black";
             }
           }
         })
@@ -274,3 +279,13 @@ distributeItemsInCircle(c3, "cir3")
 distributeItemsInCircle(c4, "cir4")
 distributeItemsInCircle(c5, "cir5")
 
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'ArrowRight') {
+    document.getElementById('arriba').click();
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'ArrowLeft') {
+    document.getElementById('abajo').click();
+  }
+});
