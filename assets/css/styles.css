@@ -28,6 +28,7 @@ td {
   text-align: center;
   position: relative;
   display: flex;
+  transition: transform 0.25s ease-in-out, border-color 0.25s ease-in-out;
 }
 
 .elem {
