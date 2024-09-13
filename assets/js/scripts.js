@@ -244,12 +244,9 @@ function rotateCircleButton(dir) {
   ganar();
 }
 
+
 function ganar() {
-  console.log("Angulo 1: ", rotationAngle1);
-  console.log("Angulo 2: ", rotationAngle2);
-  console.log("Angulo 3: ", rotationAngle3);
-  console.log("Angulo 4: ", rotationAngle4);
-  console.log("Angulo 5: ", rotationAngle5);
+
   let abs = (x) => {
     if (x >= 0) {
       return x;
@@ -289,3 +286,41 @@ document.addEventListener('keydown', function (event) {
     document.getElementById('abajo').click();
   }
 });
+
+
+function rotateMixedCircles(id) {
+  const circle = document.getElementById(id);
+  switch (id) {
+    case "cir1":
+      rotationAngle1 += (360 / 6);
+      circle.style.transform = `rotate(${rotationAngle1}deg)`;
+      break;
+    case "cir2":
+      rotationAngle2 += (360 / 8);
+      circle.style.transform = `rotate(${rotationAngle2}deg)`;
+      break;
+    case "cir3":
+      rotationAngle3 += (360 / 10);
+      circle.style.transform = `rotate(${rotationAngle3}deg)`;
+      break;
+    case "cir4":
+      rotationAngle4 += (360 / 12);
+      circle.style.transform = `rotate(${rotationAngle4}deg)`;
+      break;
+
+    case "cir5":
+      rotationAngle5 += (360 / 14);
+      circle.style.transform = `rotate(${rotationAngle5}deg)`;
+      break;
+  }
+}
+
+function mixCircles() {
+  for (let i = 0; i < 5; i++) {
+    let random_number = Math.floor(Math.random() * 100 % 14);
+    for (let j = 0; j < random_number; j++) {
+      rotateMixedCircles(`cir${i + 1}`);
+    }
+  }
+}
+mixCircles()
