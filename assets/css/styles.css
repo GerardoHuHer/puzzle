@@ -37,6 +37,14 @@ td {
   box-shadow: 0px 0px 29px 5px rgba(0, 0, 0, 0.75);
 }
 
+.circle:hover {
+  border: solid red;
+}
+
+.circle:hover div {
+  background: red;
+}
+
 .elem {
   position: absolute;
   width: 30px;
@@ -104,4 +112,8 @@ p {
   width: 45rem;
   height: 45rem;
   z-index: 1;
+}
+
+.ganaste {
+  background-image: url(../images/ganaste.jpeg);
 }

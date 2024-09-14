@@ -254,7 +254,7 @@ function ganar() {
       return -1 * x;
     }
   }
-  // Banderas para ganar
+  // Banderas para ganar../
   var band1 = abs(rotationAngle1) % 360 === 180;
   var band2 = abs(rotationAngle2) % 360 === 180;
   var band3 = abs(rotationAngle3) % 360 === 180;
@@ -264,8 +264,11 @@ function ganar() {
 
   if (band1 && band2 && band3 && band4 && band5) {
     setTimeout(function () {
-      alert("Ganaste")
+      alert("Ganaste2");
+
+      location.href = 'http://localhost/puzzle/ganaste.html';
     }, 600);
+
   }
 }
 
