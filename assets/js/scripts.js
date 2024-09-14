@@ -214,7 +214,7 @@ function rotateCircleButton(dir) {
     case "cir5":
       rotationAngle5 += (360 / 14 * dir);
       circle.style.transform = `rotate(${rotationAngle5}deg)`;
-      if (abs(rotationAngle5) % 360 === 180) {
+      if (Math.floor(abs(rotationAngle5)) % 360 === 180) {
         items = circle.querySelectorAll(".elem");
         items.forEach((item) => {
           clases = item.classList;
@@ -265,7 +265,7 @@ function ganar() {
   if (band1 && band2 && band3 && band4 && band5) {
     setTimeout(function () {
       alert("Ganaste")
-    }, 600);
+    }, 1000);
   }
 }
 
