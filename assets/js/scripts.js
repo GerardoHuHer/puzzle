@@ -12,6 +12,8 @@ var rotationAngle3 = 0;
 var rotationAngle4 = 0;
 var rotationAngle5 = 0;
 
+var sol = [1, 1, 1, 1, 1];
+
 // Id circulo
 var id;
 
@@ -163,6 +165,8 @@ function rotateCircleButton(dir) {
             if (clases[i] === "win") {
               item.style.backgroundColor = "blue";
               item.style.color = "black";
+              var text = item.textContent;
+              console.log(text)
             }
           }
         })
